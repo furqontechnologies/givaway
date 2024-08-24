@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giveaway by Qoosim Abdulhafiizh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img class="container-img" src="FURQON.png" alt="logo">
+        <h1>Welcome to Abdulhafiizh's Giveaway! 🎉</h1>
+        <p>Hi there! I'm Qoosim Abdulhafiizh, the CEO of Furqon Technologies. To show my appreciation to my amazing community, I'm hosting a special giveaway! 😄</p>
+        
+        <h2>Giveaway Details:</h2>
+        <ul>
+            <li>Follow me on Twitter by clicking on the icon: <a href="https://x.com/Furqontech21514?s=09" target="_blank"><img class="twitter-icon" src="twitter-icon.gif" alt="Twitter Icon"></a></li>
+            <li>Enter your details below to be eligible for the giveaway.</li>
+        </ul>
+
+        <!-- Form without default Formspree action -->
+        <form id="giveawayForm">
+            <label for="twitterHandle">Your Twitter Handle:</label>
+            <input type="text" id="twitterHandle" name="twitterHandle" placeholder="@YourHandle" required>
+
+            <label for="contactMethod">Preferred Reward Method:</label>
+            <select id="contactMethod" name="contactMethod" required onchange="updateFormFields()">
+                <option value="" disabled selected>Select an option</option>
+                <option value="airtime">Mobile Number for Airtime</option>
+                <option value="email">Email for Recharge Code</option>
+                <option value="account">Account Number for Token</option>
+            </select>
+
+            <!-- Additional fields that are conditionally displayed -->
+            <div id="airtimeFields" class="conditional-fields hidden">
+                <label for="network">Airtime Network:</label>
+                <select id="network" name="network">
+                    <option value="" disabled selected>Select your network</option>
+                    <option value="MTN">MTN</option>
+                    <option value="Glo">Glo</option>
+                    <option value="Airtel">Airtel</option>
+                    <option value="9mobile">9mobile</option>
+                </select>
+            </div>
+
+            <div id="emailFields" class="conditional-fields hidden">
+                <label for="emailNetwork">Network for Recharge Code:</label>
+                <select id="emailNetwork" name="emailNetwork">
+                    <option value="" disabled selected>Select your network</option>
+                    <option value="MTN">MTN</option>
+                    <option value="Airtel">Airtel</option>
+                </select>
+            </div>
+
+            <div id="accountFields" class="conditional-fields hidden">
+                <label for="accountName">Account Name:</label>
+                <input type="text" id="accountName" name="accountName" placeholder="Your Account Name">
+                
+                <label for="bankName">Bank Name:</label>
+                <input type="text" id="bankName" name="bankName" placeholder="Your Bank Name">
+            </div>
+
+            <label for="contactInfo">Enter your details:</label>
+            <input type="text" id="contactInfo" name="contactInfo" placeholder="Enter your mobile number, email, or account number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="message" class="hidden">
+            <p>Thank you for participating! We'll contact you if you win! 🎉</p>
+            <a href="https://chat.whatsapp.com/L4qQzLF7CP02GGWi9YCmbk" target="_blank" rel="noopener noreferrer">Join for more giveaway</a>       
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

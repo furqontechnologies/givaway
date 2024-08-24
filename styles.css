@@ -1,0 +1,84 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+.container-img {
+    width: 50%;
+}
+
+h1,
+h2 {
+    font-size: 28px;
+    color: #082A6B;
+}
+
+p {
+    color: #D83F11;
+}
+
+ul {
+    text-align: left;
+    color: #D83F11;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: bold;
+    color: #082A6B;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    color: #D83F11;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #082A6B;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:#D83F11;
+}
+
+.hidden {
+    display: none;
+}
+.twitter-icon {
+    width: 15px;
+    margin-left: 20px;
+ }
+
+#message {
+    margin-top: 20px;
+    color: #28a745;
+    font-weight: bold;
+}
